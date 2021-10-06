@@ -13,7 +13,7 @@ const FriendListItem = ({avatar,name,isOnline}) => {
 };
 
 export const FriendList = ({ friends }) => {
-    const FriendInfo = friends.map(({avatar,name,isOnline})=><FriendListItem avatar={avatar} name={name} isOnline={isOnline}/>)
+    const FriendInfo = friends.map(({id,avatar,name,isOnline})=><FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline}/>)
     
      return <div className="boxs-friends">{FriendInfo}</div>
 }

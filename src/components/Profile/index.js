@@ -42,6 +42,5 @@ Profile.defaultProps = {
 Profile.propTypes = {
   name: PropTypes.string,
   tag: PropTypes.string,
-  location: PropTypes.string,
-  stats: PropTypes.number
+  location: PropTypes.string
 }
